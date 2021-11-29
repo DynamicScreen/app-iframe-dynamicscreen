@@ -1,0 +1,27 @@
+# YAML
+id: app-iframe-dynamicscreen
+name: app.name
+description: app.description
+logo: far fa-browser
+version: 0.2.0
+channel: stable
+api-level: 1
+color: blue
+author:
+    name: DynamicScreen
+    email: bonjour@dynamicscreen.com
+modules:
+    - name: modules.iframe.name
+      logo: far fa-browser
+      identifier: iframe
+      color: green
+      type: slide
+      description: modules.iframe.description
+      options:
+        vue:
+            component: src/Iframe/Iframe.ts
+            options: src/Iframe/IframeOptions.ts
+        php:
+            handler: Vendor\Iframe\IframeHandler
+        node:
+            handler: src/handler.js

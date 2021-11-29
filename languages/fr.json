@@ -1,0 +1,17 @@
+{
+  "app": {
+    "name": "Iframe",
+    "description": "Affiche un site web dans une iframe",
+    "author": {
+      "name": "DynamicScreen",
+      "email": "bonjour@dynamicscreen.com",
+      "note": "Written with love <3 Buy me a cofee @ itsajoke.com !"
+    }
+  },
+  "modules": {
+    "weather": {
+      "name": "Iframe",
+      "description": "Affiche un site web dans une iframe"
+    }
+  }
+}
