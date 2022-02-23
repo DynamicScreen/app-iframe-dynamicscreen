@@ -22,6 +22,6 @@ modules:
             component: src/Iframe/Iframe.ts
             options: src/Iframe/IframeOptions.ts
         php:
-            handler: Vendor\Iframe\IframeHandler
+            handler: \DynamicScreen\Iframe\Iframe\IframeHandler
         node:
             handler: src/handler.js
