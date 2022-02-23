@@ -14,7 +14,7 @@ modules:
     - name: modules.iframe.name
       logo: far fa-browser
       identifier: iframe
-      color: green
+      color: blue
       type: slide
       description: modules.iframe.description
       options:
