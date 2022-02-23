@@ -1,16 +1,17 @@
 {
-  "name": "dynamicscreen-iframe",
+  "name": "app-iframe-dynamicscreen",
   "version": "0.2.0",
   "description": "Display your website",
-  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "DynamicScreen",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DynamicScreen/app-iframe-dynamicscreen.git"
+  },
   "dependencies": {
-    "dynamicscreen-sdk-js": "^0.0.13",
-    "i18next": "^20.4.0",
     "webpack": "^5.50.0"
   },
   "peerDependencies": {
@@ -20,10 +21,6 @@
     "@types/node": "^16.6.1",
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DynamicScreen/app-iframe-dynamicscreen.git"
   },
   "bugs": {
     "url": "https://github.com/DynamicScreen/app-iframe-dynamicscreen/issues"
