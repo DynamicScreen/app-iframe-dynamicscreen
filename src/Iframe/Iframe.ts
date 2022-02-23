@@ -1,6 +1,6 @@
 import {
     BaseContext,
-    AssetDownload,
+    IAssetDownload,
     IAssetsStorageAbility,
     IGuardsManager,
     ISlideContext,
@@ -9,56 +9,15 @@ import {
 } from "dynamicscreen-sdk-js";
 
 import {onMounted, reactive, Ref, ref, VNode} from 'vue';
-import i18next from "i18next";
 import { h } from "vue"
-
-const en = require("../../../languages/en.json");
-const fr = require("../../../languages/fr.json");
 
 export default class IframeSlideModule extends SlideModule {
     constructor(context: ISlideContext) {
         super(context);
     }
 
-    trans(key: string) {
-        return i18next.t(key);
-    };
-
     async onReady() {
         return true;
-    };
-
-    onMounted() {
-        console.log('onMounted')
-    }
-
-    //@ts-ignore
-    onErrorTracked(err: Error, instance: Component, info: string) {
-    }
-
-    //@ts-ignore
-    onRenderTriggered(e) {
-    }
-
-    //@ts-ignore
-    onRenderTracked(e) {
-    }
-
-    onUpdated() {
-    }
-
-    initI18n() {
-        i18next.init({
-            fallbackLng: 'en',
-            lng: 'fr',
-            resources: {
-                en: { translation: en },
-                fr: { translation: fr },
-            },
-            debug: true,
-        }, (err, t) => {
-            if (err) return console.log('something went wrong loading translations', err);
-        });
     };
 
     // @ts-ignore
