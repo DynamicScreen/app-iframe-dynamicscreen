@@ -1,7 +1,7 @@
 {
   "app": {
-    "name": "Iframe",
-    "description": "Affiche un site web dans une iframe",
+    "name": "Page Web",
+    "description": "Affiche une page web",
     "author": {
       "name": "DynamicScreen",
       "email": "bonjour@dynamicscreen.com",
@@ -10,8 +10,13 @@
   },
   "modules": {
     "iframe": {
-      "name": "Iframe",
-      "description": "Affiche un site web dans une iframe"
+      "name": "Page Web",
+      "description": "Affiche une page web",
+      "options": {
+        "url": "Adresse URL sécurisée",
+        "refresh_content": "Actualiser le contenu automatiquement",
+        "invalid_url": "L'url donnée n'est pas valide"
+      }
     }
   }
 }
